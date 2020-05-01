@@ -1,0 +1,10 @@
+--- 
+tests:
+- cmd: curl
+  cases: 
+  - name: curl -s https://postman-echo.com/get?test=curl
+    args: -s,https://postman-echo.com/get?test=curl
+    out: 0
+  - name: curl -invalidflag
+    args: -invalidflag
+    out: 1
